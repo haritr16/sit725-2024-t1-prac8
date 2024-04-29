@@ -158,6 +158,21 @@
         <!-- jquery -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+            <!-- socket -->
+
+<script src="http://localhost:3000/socket.io/socket.io.js"></script> -->
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    const socket = io();
+
+    // Listen for 'randomNumber' event from server
+    socket.on('randomNumber', randomNumber => {
+        console.log('Received random number from server:', randomNumber);
+    });
+</script>
+
+            <!-- socket -->
 </body>
 <!-- js file -->
 <script src="js/scripts.js"></script>

@@ -11,7 +11,7 @@ import('chai').then(chai => {
                 .post('/submit')
                 .send({
                     name: 'hari',
-                    email: 'hari@example.com',
+                    email: 'hari@gmail.com',
                     car: 'car4'
                 })
                 .end((err, res) => {
